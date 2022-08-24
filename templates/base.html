@@ -8,7 +8,7 @@
      <!--Import Google Icon Font-->
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <!--Import materialize.css-->
-     <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='node_modules/materialize-css/dist/css/materialize.min.css') }}"  media="screen,projection"/>
+     <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='node_modules/materialize-css/dist/css/materialize.min.css') }}"  media="screen,projection"/><link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='theme/style/style.css') }}"/>
     <title>{{ title }}</title>
 </head>
 <body>
@@ -30,7 +30,7 @@
           </ul>
         </div>
       </nav>
-            
+      <main>      
       <ul id="slide-out" class="sidenav">
         <li><div class="user-view">
           <h4>Nome da empresa</h4>
@@ -50,10 +50,25 @@
       <div>
         {% block conteudo %}{% endblock %}
       </div>
+    </main>
+    <div style="height: 10px;"></div>
+      <footer class="page-footer blue darken-1">
+        <section class="container">
+          <div class="row">
+            {% block footer %}{% endblock %}
+          </div>
+        </section>
+        <section class="footer-copyright blue darken-2">
+          <div class="container">
+          © 2022 Versátil Softwares
+          </div>
+        </section>
+      </footer>
     
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="{{ url_for('static',filename='node_modules/materialize-css/dist/js/materialize.min.js') }}"></script>
     <script src="{{ url_for('static',filename='theme/js/sidenav.js') }}"></script>
+    <script src="{{ url_for('static',filename='theme/js/select.js') }}"></script>
 </body>
 </html>

@@ -1,7 +1,84 @@
 {% extends "base.html" %}
-{% block busca %}
-<span>teste</span>
-{% endblock %}
+
 {% block conteudo %}
-<span>teste</span>
-{% endblock %}
+<div class="container">
+    <div class="row" style="margin-top: 30px">
+        <div class="col s4"> <span> <b>CFOP:</b> </span> </div>
+        <div class="input-field col s8 inline">
+            <input id="email_inline" type="number" class="validate">
+            <label for="email_inline">CFOP</label>
+            <span class="helper-text" data-error="Número CFOP" data-success="Número CFOP">Número CFOP</span>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="row" style="margin-top: 30px">
+        <div class="col s4"> <span> <b>Cliente:</b> </span> </div>
+        <div class="col s8">
+        <div class="input-field inline">
+            <input id="email_inline" type="number" class="validate">
+            <label for="email_inline">Número</label>
+            <span class="helper-text" data-error="Número do Cliente" data-success="Número do Cliente">Número do Cliente</span>
+        </div>
+        <div class="input-field inline">
+            <input id="email_inline" type="text" class="validate">
+            <label for="email_inline">Nome</label>
+            <span class="helper-text" data-error="Nome do Cliente" data-success="Nome do Cliente">Nome do Cliente</span>
+        </div>
+        <button class="btn orange darken-3 waves-effect waves-light" type="submit" name="action">Selecionar
+            <i class="material-icons right">send</i>
+        </button>
+    </div>
+    </div>
+    <div class="divider"></div>
+    <div class="row" style="margin-top: 30px">
+        <div class="col s4"> <span> <b>Produtos:</b> </span> </div>
+        <div class="col s8">
+        <div class="input-field inline">
+            <span class="prefix">R$:</span>
+            <input id="email_inline" type="number" class="validate">
+            <label for="email_inline">Total:  R$:</label>
+            <span class="helper-text" data-error="Valor Total" data-success="Valor Total">Valor Total</span>
+        </div>
+        <button class="btn orange darken-3 waves-effect waves-light" type="submit" name="action">Carrinho
+            <i class="material-icons right">shopping_cart</i>
+        </button>
+    </div>
+    </div>
+    <div class="divider"></div>
+    <div class="row" style="margin-top: 30px">
+        <div class="col s4"> <span> <b>Forma de Pagamento:</b> </span> </div>
+        <div class="col s8">
+            <div class="input-field col s12">
+                <select>
+                  <option value="" disabled selected>Selecione</option>
+                  <option value="1">A Vista Dinheiro</option>
+                  <option value="2">A Vista Cartão</option>
+                  <option value="3">A Vista Pix</option>
+                </select>
+                <label>Forma de pagamento</label>
+              </div>
+    </div>
+    </div>
+    
+    
+</div>
+{% endblock conteudo %}
+
+{% block footer %}
+    
+<div>
+    <div class="row">
+        <div class="col s6">
+            <button class="btn orange darken-3 waves-effect waves-light" type="submit" name="action">Cancelar
+                <i class="material-icons right">remove_shopping_cart</i>
+            </button>
+        </div>
+        <div class="col s6">
+            <button class="btn orange darken-3 waves-effect waves-light" type="submit" name="action">Concluir
+                <i class="material-icons right">add_shopping_cart</i>
+            </button>
+        </div>
+    </div>
+</div>
+
+{% endblock footer %}
