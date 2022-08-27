@@ -1,8 +1,87 @@
 {% extends "base.html" %}
-{% block busca %}
-{% endblock busca %}
-{% block conteudo %}
-{% endblock conteudo %}
-{% block footer %}
-{% endblock footer %}
 
+{% block conteudo %}
+<section class="container">
+    <div class="row" style="margin-top: 10px">
+        <div class="input-field col s12 inline">
+            <input id="nome_fantasia" type="text" class="validate">
+            <span class="helper-text" data-error="Nome" data-success="Nome">Nome</span>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 10px">
+        <div class="input-field col s5 inline">
+            <input id="nome_fantasia" type="text" class="validate">
+            <span class="helper-text" data-error="Preço" data-success="Preço">Preço</span>
+        </div>
+        <div class="input-field col s5 inline">
+            <select>
+                <option value="" disabled selected></option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+              <span class="helper-text" data-error="Unidade" data-success="Unidade">Unidade</span>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 10px">
+        <div class="input-field col s5 inline">
+            <select>
+                <option value="" disabled selected></option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+              <span class="helper-text" data-error="Grupo" data-success="Grupo">Grupo</span>
+        </div>
+    
+        <div class="row">
+            <form class="col s12">
+            <div class="row">
+                <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <span class="helper-text" data-error="Detalhes" data-success="Detalhes">Detalhes</span>
+                </div>
+            </div>
+            </form>
+        </div>
+        
+        
+    </div>
+
+    <div class="row" style="margin-top: 10px">
+        <div class="input-field col s12 inline">
+            <input id="nome_fantasia" type="number" class="validate">
+            <span class="helper-text" data-error="Cod. Produto" data-success="Cod. Barras">Cod. Produto</span>
+        </div>
+        <div class="input-field col s12 inline">
+            <input id="nome_fantasia" type="number" class="validate">
+            <span class="helper-text" data-error="Cod. Produto" data-success="Cod. Barras">Cod. Barras 1</span>
+        </div>
+        <div class="input-field col s12 inline">
+            <input id="nome_fantasia" type="number" class="validate">
+            <span class="helper-text" data-error="Cod. Produto" data-success="Cod. Barras">Cod. Barras 2</span>
+        </div>
+    </div>
+    
+
+</section>
+{% endblock conteudo %}
+
+{% block footer %}
+    
+<div>
+    <div class="row">
+        <div class="col s6">
+            <button class="btn orange darken-3 waves-effect waves-teal" type="submit" name="action">Cancelar
+                <i class="material-icons right">remove_shopping_cart</i>
+            </button>
+        </div>
+        <div class="col s6">
+            <button class="btn orange darken-3 waves-effect waves-teal" type="submit" name="action">Adicionar
+                <i class="material-icons right">add_shopping_cart</i>
+            </button>
+        </div>
+    </div>
+</div>
+
+{% endblock footer %}

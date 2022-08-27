@@ -1,8 +1,147 @@
 {% extends "base.html" %}
-{% block busca %}
-{% endblock busca %}
-{% block conteudo %}
-{% endblock conteudo %}
-{% block footer %}
-{% endblock footer %}
 
+{% block conteudo %}
+<section class="container">
+    <div class="row" style="margin-top: 10px">
+        <div class="col s2" style="margin-top: 20px"> 
+            <i class="material-icons small">person</i>
+                       </div>
+        <div class="input-field col s10 inline">
+            <input id="nome_fantasia" type="text" class="validate">
+            <span class="helper-text" data-error="Nome Fantasia" data-success="Nome Fantasia">Nome Fantasia</span>
+        </div>
+    </div>
+
+    
+    <div class="row" style="margin-top: 10px">
+        <div class="col s2" style="margin-top: 20px"> 
+            <i class="material-icons small">person</i>
+                       </div>
+        <div class="input-field col s10 inline">
+            <input id="rasao_social" type="text" class="validate">
+            <span class="helper-text" data-error="Razão Social" data-success="Razão Social">Razão Social</span>
+        </div>
+    </div>
+
+    
+    <div class="row" style="margin-top: 10px">
+        <div class="col s2" style="margin-top: 20px"> 
+            <i class="material-icons small">subtitles</i>
+                       </div>
+        <div class="input-field col s10 inline">
+            <input id="CNPJ" type="text" class="validate">
+            <span class="helper-text" data-error="CNPJ" data-success="CNPJ">CNPJ</span>
+        </div>
+    </div>
+
+    
+    <div class="row" style="margin-top: 10px">
+        <div class="col s2" style="margin-top: 20px"> 
+            <i class="material-icons small">subtitles</i>
+                       </div>
+        <div class="input-field col s10 inline">
+            <input id="nome_fantasia" type="text" class="validate">
+            <span class="helper-text" data-error="Inscrição Estadual" data-success="Inscrição Estadual">Inscrição Estadual</span>
+        </div>
+    </div>
+
+
+    <div class="row" style="margin-top: 10px">
+        <div class="col s2" style="margin-top: 20px"> 
+            <i class="material-icons small">place</i>
+                       </div>
+        <div class="input-field col s6 inline">
+            <input id="nome_fantasia" type="text" class="validate">
+            <span class="helper-text" data-error="CEP" data-success="CEP">CEP</span>
+        </div>
+        <div class="input-field col s4 inline">
+            <input id="nome_fantasia" type="text" class="validate">
+            <span class="helper-text" data-error="Número" data-success="Número">Número</span>
+        </div>
+    </div>
+
+
+    <div class="row" style="margin-top: 10px">
+        <div class="col s2" style="margin-top: 20px"> 
+            <i class="material-icons small">place</i>
+                       </div>
+        <div class="input-field col s10 inline">
+            <input id="nome_fantasia" type="text" class="validate">
+            <span class="helper-text" data-error="Rua" data-success="Rua">Rua</span>
+        </div>
+    </div>
+
+
+    <div class="row" style="margin-top: 10px">
+        <div class="col s2" style="margin-top: 20px"> 
+            <i class="material-icons small">place</i>
+                       </div>
+        <div class="input-field col s10 inline">
+            <input id="nome_fantasia" type="text" class="validate">
+            <span class="helper-text" data-error="Bairro" data-success="Bairro">Bairro</span>
+        </div>
+    </div>
+
+
+    <div class="row" style="margin-top: 10px">
+        <div class="col s2" style="margin-top: 20px"> 
+            <i class="material-icons small">place</i>
+                       </div>
+        <div class="input-field col s6 inline">
+            <input id="nome_fantasia" type="text" class="validate">
+            <span class="helper-text" data-error="Cidade" data-success="Cidade">Cidade</span>
+        </div>
+        <div class="input-field col s4 inline">
+            <select>
+              <option value="" disabled selected></option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+            <span class="helper-text" data-error="Estado" data-success="Estado">Estado</span>
+          </div>
+    </div>
+
+
+    <div class="row" style="margin-top: 10px">
+        <div class="col s2" style="margin-top: 20px"> 
+            <i class="material-icons small">phone</i>
+                       </div>
+        <div class="input-field col s10 inline">
+            <input id="telefone" type="number" pattern="{1}[0-9]{10,14}" class="validate">
+            <span class="helper-text" data-error="Telefone" data-success="Telefone">Telefone</span>
+        </div>
+    </div>
+
+
+    <div class="row" style="margin-top: 10px">
+        <div class="col s2" style="margin-top: 20px"> 
+            <i class="material-icons small">contact_mail</i>
+                       </div>
+        <div class="input-field col s10 inline">
+            <input id="nome_fantasia" type="email" class="validate">
+            <span class="helper-text" data-error="E-mail" data-success="E-mail">E-mail</span>
+        </div>
+    </div>
+
+</section>
+{% endblock conteudo %}
+
+{% block footer %}
+    
+<div>
+    <div class="row">
+        <div class="col s6">
+            <button class="btn orange darken-3 waves-effect waves-teal" type="submit" name="action">Cancelar
+                <i class="material-icons right">remove_shopping_cart</i>
+            </button>
+        </div>
+        <div class="col s6">
+            <button class="btn orange darken-3 waves-effect waves-teal" type="submit" name="action">Concluir
+                <i class="material-icons right">add_shopping_cart</i>
+            </button>
+        </div>
+    </div>
+</div>
+
+{% endblock footer %}

@@ -1,8 +1,54 @@
 {% extends "base.html" %}
-{% block busca %}
-{% endblock busca %}
-{% block conteudo %}
-{% endblock conteudo %}
-{% block footer %}
-{% endblock footer %}
 
+{% block conteudo %}
+<div class="container">
+    <div class="row" style="margin-top: 30px">
+        <div class="col s3"> <span> <b>Produto:</b> </span> </div>
+        <div class="input-field col s9 inline">
+            <div>
+                <!-- <a class="btn-floating orange darken-3 waves-effect waves-teal">
+                    <i class="material-icons">add</i>
+                </a> -->
+                <input type="number" class="validate">
+                <!-- <a class="btn-floating orange darken-3 waves-effect waves-teal">
+                    <i class="material-icons">remove</i>
+                </a> -->
+                <span
+                    class="helper-text"
+                    data-error="Quantidade"
+                    data-success="Quantidade"
+                    >Quantidade</span
+                >
+            </div>
+            <div>
+                <h5>Lorem Ipsun</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem at harum fugiat iusto amet, qui voluptas illo ex deserunt aliquid odit. Commodi, reiciendis libero ex earum incidunt velit laborum aliquid.</p>
+            </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    
+    
+</div>
+{% endblock conteudo %}
+
+{% block footer %}
+    
+<div>
+
+    
+    <div class="row">
+        <div class="col s6">
+            <button class="btn orange darken-3 waves-effect waves-teal" type="submit" name="action">Cancelar
+                <i class="material-icons right">remove_shopping_cart</i>
+            </button>
+        </div>
+        <div class="col s6">
+            <button class="btn orange darken-3 waves-effect waves-teal" type="submit" name="action" style="font-size: 12px;">Concluir
+                <i class="material-icons right">add_shopping_cart</i>   
+            </button>
+        </div>
+    </div>
+</div>
+
+{% endblock footer %}
